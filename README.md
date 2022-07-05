@@ -9,3 +9,6 @@ password should be min 6 character with MIX of Uppercase, lowercase, digits
 At Least 2 permissions should be ticked.
 If all validation passes, the form and submit button should disappear and all the filled in details in the form should appear with a Confirm Button.
 
+![image](https://user-images.githubusercontent.com/33595080/177309716-1e19bf5a-5dda-4160-8119-a2d10a38f048.png)
+
+![image](https://user-images.githubusercontent.com/33595080/177309749-b941f433-cb60-4714-8d1f-493a929aeb04.png)
