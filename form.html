@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validity</title>
+    <link rel="stylesheet" href="form.css">
+    <script defer src="validation.js"></script>
+</head>
+<body>
+    <div class="registerForm" id="registerForm">
+        <form action="/" class="myform" id="myform" method="GET">
+            <h1 class="formtitle">
+                Register Your Roles Here!
+            </h1>
+            <div id="errors" class="error-container"></div>
+            <div class="input-container">
+                <input type="text" id="email" class="email" required/>
+                <label for="email" class="label">Email</label>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" class="password" 
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$" required/>
+                <label for="pswd" class="label">Password</label>
+            </div>
+            <div class="input-container">
+                <label for="gender" class="label">Gender:</label><br>
+                <select id="gender" name="gender" required>
+                    <option value="">None</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="role" class="label">Role</label><br>
+                <input type="radio" id="admin" name="role" value="admin" required/>
+                <label for="admin">Admin</label><br>
+                <input type="radio" id="user" name="role" value="user"/>
+                <label for="user">User</label><br>
+            </div>
+            <div class="input-container">
+                <label for="permissions" class="label">Terms and Conditions</label><br>
+                <input type="checkbox" id="permissions1" name="permissions" value="perm1"/>
+                <label for="permissions1" class="label-permissions">I have read and agreed to Privacy Policy!</label><br>
+                <input type="checkbox" id="permissions2" name="permissions" value="perm2"/>
+                <label for="permissions2" class="label-permissions">I consent to the above imformation being used by the form creator!</label><br>
+                <input type="checkbox" id="permissions3" name="permissions" value="perm3"/>
+                <label for="permissions3" class="label-permissions">I am of 18 years and above!</label><br>
+                <input type="checkbox" id="permissions4" name="permissions" value="perm4"/>
+                <label for="permissions4" class="label-permissions">Yes I want to this website to send me marketing emails!</label><br>
+            </div>
+            <div class="input-container">
+                <input type="submit" name="submit" class="submitBtn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
